@@ -18,3 +18,14 @@ const Gameboard = (function() {
     };
 })();
 
+function player(name, marker) {
+    let score = 0;
+    return {
+        name,
+        marker, 
+        score,
+        reset() {
+            this.score = 0;
+        },
+    };
+}
