@@ -39,6 +39,7 @@ const Controller = (function(){
     let gameOver = false;
     return {
         play(index) {
+            DisplayController.getBoard();
             if (gameOver === false) {
                 // toggling turn 
                 if(Gameboard.mark(index, currentPlayer.marker) === true){
@@ -84,6 +85,18 @@ const Controller = (function(){
             }
         }
     }
+})();
+
+const DisplayController = (function() {
+    return {
+        displayBoard() {
+            const cells = document.querySelectorAll(".cell");
+            let displayArray = Gameboard.getBoard();
+            cells.forEach((cell, index) => {
+                cell.textContent = displayArray[index];
+            });
+        }
+    };
 })();
 
 
