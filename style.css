@@ -32,3 +32,9 @@ body {
     align-items: center;
     font-size: 4rem;
 }
+.players {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
