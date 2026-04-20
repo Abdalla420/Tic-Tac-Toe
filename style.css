@@ -15,9 +15,9 @@
     font-display: swap;
 }
 :root {
-    --left-vertical: 840px;
-    --left-horizontal: 700px;
-    --top-horizontal: 250px;
+    --left-vertical: 850px;
+    --left-horizontal: 650px;
+    --top-horizontal: 300px;
 }
 body {
     background-image: url(./images/paper.png);
