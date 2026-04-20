@@ -39,10 +39,10 @@ const Controller = (function(){
     let gameOver = false;
     return {
         play(index) {
+            DisplayController.getBoard();
             if (gameOver === false) {
                 // toggling turn 
                 if(Gameboard.mark(index, currentPlayer.marker) === true){
-                    DisplayController.displayBoard();
                     if(this.checkWin() === false && this.checkDraw() === false){
                         (currentPlayer === player1)? currentPlayer = player2 : currentPlayer = player1;
                     }
@@ -100,12 +100,12 @@ const DisplayController = (function() {
 })();
 
 
-Controller.play(4);
-Controller.play(0);
-Controller.play(8);
-Controller.play(2);
-Controller.play(6);
-Controller.play(1);
+// Controller.play(4);
+// Controller.play(0);
+// Controller.play(8);
+// Controller.play(2);
+// Controller.play(6);
+// Controller.play(1);
 Gameboard.getBoard();
 // Controller.play(0);
 // Controller.play(0);
