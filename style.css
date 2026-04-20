@@ -51,7 +51,7 @@ body {
 .player-score {
     text-align: center;
 }
-.board {
+.boardContainer {
     position: relative;
 }
 .line {
