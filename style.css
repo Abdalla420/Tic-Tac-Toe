@@ -49,26 +49,35 @@ body {
 .player-score {
     text-align: center;
 }
+.boardCells {
+    position: relative;
+    z-index: 1;
+}
 .boardContainer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .boardLines {
-    position: relative;
+    position: absolute;
     height: 602px;
     width: 602px;
+    z-index: 0;
 }
 .line {
     position: absolute;
+    pointer-events: none;
 }
 #line-0 {
-    left: 100px;
+    left: 180px;
 }
 #line-1 {
-
+    left: 360px;
 }
 #line-2 {
- 
+    top: 200px;
 }
 #line-3 {
-
+    top: 400px;
 }
