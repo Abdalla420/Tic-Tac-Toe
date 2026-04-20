@@ -15,9 +15,9 @@
     font-display: swap;
 }
 :root {
-    --left-vertical: 850px;
+    --left-vertical: 830px;
     --left-horizontal: 650px;
-    --top-horizontal: 300px;
+    --top-horizontal: 200px;
 }
 body {
     background-image: url(./images/paper.png);
@@ -26,7 +26,7 @@ body {
     background-size: cover;
 }
 .container {
-    height: 100vh;
+    height: 98vh;
     display: grid;
     grid-template-rows: 1fr 2fr 10fr;
 }
@@ -61,7 +61,7 @@ body {
     left: var(--left-vertical);
 }
 #line-1 {
-    left: calc(var(--left-vertical) + 180px);
+    left: calc(var(--left-vertical) + 200px);
 }
 #line-2 {
     left: calc(var(--left-horizontal));
