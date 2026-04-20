@@ -15,9 +15,7 @@
     font-display: swap;
 }
 :root {
-    --left-vertical: 830px;
-    --left-horizontal: 650px;
-    --top-horizontal: 200px;
+
 }
 body {
     background-image: url(./images/paper.png);
@@ -54,20 +52,23 @@ body {
 .boardContainer {
     position: relative;
 }
+.boardLines {
+    position: relative;
+    height: 602px;
+    width: 602px;
+}
 .line {
     position: absolute;
 }
 #line-0 {
-    left: var(--left-vertical);
+    left: 100px;
 }
 #line-1 {
-    left: calc(var(--left-vertical) + 200px);
+
 }
 #line-2 {
-    left: calc(var(--left-horizontal));
-    top: var(--top-horizontal);
+ 
 }
 #line-3 {
-    left: calc(var(--left-horizontal));
-    top: calc(var(--top-horizontal) + 180px);
+
 }
